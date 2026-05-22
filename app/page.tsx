@@ -80,9 +80,8 @@ export default function IMPDPage() {
           <p className="text-sm font-semibold text-foreground">
             IMPD-MT · Inventário de Planejamento Urbano de Mato Grosso
           </p>
-          <p className="mt-1 text-xs text-muted-foreground">
-            Dados coletados até 19/05/2026 · Fonte: IMEA · IBGE Censo 2022 · leismunicipais.com.br
-          </p>
+          <p className="mt-1 text-xs text-muted-foreground">Dados coletados até 19/05/2026 · Fonte: IMEA · IBGE Censo 2022 · leismunicipais.com.br</p>
+          <p className="mt-3 text-sm">Desenvolvido por <a href="https://github.com/RenanModesto0812" target="_blank" className="font-semibold underline">Renan Modesto</a></p>
         </div>
       </footer>
       

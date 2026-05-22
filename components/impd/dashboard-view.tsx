@@ -99,6 +99,15 @@ export function DashboardView({ cidades }: DashboardViewProps) {
         </div>
       </div>
       
+      {/* KPI Cards */}
+      <div className="mx-auto max-w-7xl px-6 -mt-4 relative z-10">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="bg-card rounded-xl p-4 shadow"><div className="text-xs">Municípios</div><div className="text-2xl font-bold">{cidades.length}</div></div>
+      <div className="bg-card rounded-xl p-4 shadow"><div className="text-xs">Críticos</div><div className="text-2xl font-bold">{stats.classif[0].value}</div></div>
+      <div className="bg-card rounded-xl p-4 shadow"><div className="text-xs">Em Desenvolvimento</div><div className="text-2xl font-bold">{stats.classif[1].value}</div></div>
+      <div className="bg-card rounded-xl p-4 shadow"><div className="text-xs">Estruturados</div><div className="text-2xl font-bold">{stats.classif[2].value}</div></div>
+      </div></div>
+
       {/* Charts Grid */}
       <div className="mx-auto max-w-7xl px-6 py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
